@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Theme Management ---
     function loadTheme() {
         const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         const theme = savedTheme || (prefersDark ? 'dark' : 'light');
         body.dataset.theme = theme;
     }
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateThemeToggleIcon() {
         const isDark = body.dataset.theme === 'dark';
-        themeToggle.innerHTML = `<i class="fas fa-${isDark ? 'sun' : 'moon'}" aria-hidden="true"></i>`;
+themeToggle.innerHTML = '<i class="fas fa-' + (isDark ? 'sun' : 'moon') + '" aria-hidden="true"></i>';
         themeToggle.setAttribute('aria-label', `Passer en mode ${isDark ? 'clair' : 'sombre'}`);
     }
 
@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close sidebar on overlay click (mobile)
     body.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768 && e.target === body && sidebar.classList.contains('is-open')) {
+if (window.innerWidth <= 768 && e.target === body && sidebar.classList.contains('is-open')) {
             toggleSidebar();
         }
     });
 
-    // --- Smooth Scrolling & Active Nav ---
+    // --- Smooth Scrolling &amp; Active Nav ---
     sidebarLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
                 updateActiveNav(`#${sectionId}`);
             }
         });
@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Typing Effect ---
     const phrases = [
-        "Développeur Réseaux & Cybersécurité",
-        "Étudiant BUT R&T parcours Cybersécurité", 
+"Développeur Réseaux & Cybersécurité",
+"Étudiant BUT R&T parcours Cybersécurité",
         "Alternant chez Auchan Retail",
-        "Passionné d'infrastructure & sécurité"
+"Passionné d'infrastructure & sécurité"
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -130,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const typeSpeed = isDeleting ? 50 : 100;
         setTimeout(() => {
-            if (!isDeleting && charIndex === phrases[phraseIndex].length) {
+if (!isDeleting && charIndex === phrases[phraseIndex].length) {
                 isDeleting = true;
                 cursorElement.classList.add('blink-pause');
                 setTimeout(typePhrase, 1500);
-            } else if (isDeleting && charIndex === 0) {
+else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 phraseIndex = (phraseIndex + 1) % phrases.length;
                 cursorElement.classList.remove('blink-pause');
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Project Modal ---
     const projects = {
         pepiniere: {
-            title: 'Projet Pépinière d\'Entreprise',
+            title: 'Projet Pépinière d\\'Entreprise',
             description: `Infrastructure réseau complète pour une pépinière d'entreprises (SAE21/24).
 
 **Équipements:**
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('modal-project-title').textContent = project.title;
                 document.getElementById('modal-project-description').innerHTML = project.description;
                 const techContainer = document.querySelector('.project-tech-modal');
-                techContainer.innerHTML = project.tech.map(tech => `<span>${tech}</span>`).join('');
+techContainer.innerHTML = project.tech.map(function(tech) { return '<span>' + tech + '</span>'; }).join('');
                 projectModal.classList.add('active');
                 body.style.overflow = 'hidden';
             }

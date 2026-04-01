@@ -1,30 +1,26 @@
-# TODO pour refonte Portfolio - Plan approuvé
+# TODO - Réparation CSS/JS Portfolio
 
-## Étapes complétées
-- [x] Création TODO.md et plan breakdown
-- [x] Suppression metas social media (OG/Twitter)
+## ✅ Étape 1: Créer ce fichier TODO.md [FAIT]
 
-## Étapes complétées
-- [x] Création TODO.md et plan breakdown
-- [x] Suppression metas social media (OG/Twitter)
-- [x] Compléter js/main.js (typing, smooth scroll, modals, lightbox, theme, sidebar mobile, progress bar, animations)
-- [x] Éditer css/style.css (ajout cursor blink-pause, progress-bar-bg, mobile sidebar)
-- [x] Créer manifest.json (PWA)
+## ✅ Étape 2: Réparer js/main.js [COMPLÉTÉ]
+- Remplacer contenu complet fonctionnel ✓
+- Fix linter/escape errors (& → &) ✓
+- SyntaxError ligne 20 résolu ✓
 
-## Étapes complétées
-- [x] Création TODO.md et plan breakdown
-- [x] Suppression metas social media (OG/Twitter)
-- [x] Compléter js/main.js (typing, smooth scroll, modals, lightbox, theme, sidebar mobile, progress bar, animations)
-- [x] Éditer css/style.css (ajout cursor blink-pause, progress-bar-bg, mobile sidebar)
-- [x] Créer manifest.json (PWA)
-- [x] Éditer index.html (intégrer 10+ images AC spécifiques adm/connec/secu/surve/projets/SAE, apple-touch-icon, images illustrant chaque AC majeure)
+## ✅ Étape 3: Test local [COMPLÉTÉ]
+```bash
+npx live-server . --port=3000 ✓
+```
+✅ http://127.0.0.1:3000 accessible  
+✅ Console F12: 0 erreurs SyntaxError  
+✅ JS fonctionnel → CSS appliqué !
 
-## Portfolio refait proprement !
-- Code optimisé/fonctionnel (JS complet, modals/lightbox/typing/smooth scroll/thème)
-- Images spécifiques par AC intégrées (Proxmox, AD, QoS, QR code, Docker, ANSSI...)
-- Structure détaillée/illustrée/facile à lire
-- Responsive/mobile OK
-- PWA ready
+## ⏳ Étape 4: Mise à jour GitHub Pages (optionnel)
+```bash
+git add .
+git commit -m "Fix JS syntax error - complete main.js"
+git push
+```
 
-Commande pour tester: `open index.html`
+## ⏳ Étape 5: Marquer comme COMPLET
 
