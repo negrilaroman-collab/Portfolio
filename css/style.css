@@ -65,7 +65,8 @@
     --dot-red: #dc3545;
     --dot-yellow: #ffc107;
     --dot-green: #198754;
-    --progress-bar-bg: rgba(0, 0, 0, 0.1);
+    --progress-bar-bg: rgba(255, 255, 255, 0.1);
+    --blink-pause: 0s infinite; /* For typing cursor pause */
 }
 
 /* Base Styles */
@@ -328,7 +329,20 @@ section h2::after {
 
 .cursor {
     animation: blink 1s infinite;
-} {
+}
+
+.cursor.blink-pause {
+    animation: none;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
     0%, 50% {
         opacity: 1;
     }

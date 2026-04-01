@@ -10,27 +10,16 @@
     <meta name="keywords" content="Roman Negrila, Portfolio, BUT R&T, Cybersécurité, Réseaux, Alternance, IUT Béthune, Projets, Compétences">
     <meta name="author" content="Roman Negrila">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="URL_DE_VOTRE_PORTEFOLIO"> <!-- REMPLACER AVEC L'URL RÉELLE -->
-    <meta property="og:title" content="Roman Negrila - Portfolio BUT R&T Cybersécurité">
-    <meta property="og:description" content="Découvrez le parcours, les projets et les compétences de Roman Negrila en cybersécurité et réseaux.">
-    <meta property="og:image" content="URL_IMAGE_APERÇU"> <!-- REMPLACER AVEC L'URL D'UNE IMAGE PERTINENTE -->
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="URL_DE_VOTRE_PORTEFOLIO"> <!-- REMPLACER AVEC L'URL RÉELLE -->
-    <meta property="twitter:title" content="Roman Negrila - Portfolio BUT R&T Cybersécurité">
-    <meta property="twitter:description" content="Découvrez le parcours, les projets et les compétences de Roman Negrila en cybersécurité et réseaux.">
-    <meta property="twitter:image" content="URL_IMAGE_APERÇU"> <!-- REMPLACER AVEC L'URL D'UNE IMAGE PERTINENTE -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0a0f2f" />
+<link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a0f2f">
+    <link rel="apple-touch-icon" href="assets/images/image1.png">
 </head>
 <body data-theme="dark">
     <div id="progress-bar"></div>
@@ -257,8 +246,10 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                         <p>Lors du projet <strong>Pépinière d'Entreprise</strong> (SAE21/SAE24), j'ai conçu une infrastructure réseau complète pour une société de pépinière d'entreprises. Ce projet a nécessité la conception d'un réseau sécurisé avec plusieurs services (administration, production, IT) séparés par des VLANs. J'ai intégré les notions de haute disponibilité avec la redondance des équipements, configuré la QoS pour prioriser le trafic voix sur IP, et mis en place une architecture sécurisée avec pare-feu et filtrage.</p>
                         
                         <figure>
-                            <img src="assets/images/image1.png" alt="Architecture réseau du projet Pépinière d'entreprise" class="skill-img" loading="lazy" data-lightbox-caption="Architecture réseau du projet Pépinière d'entreprise"/>
-                            <figcaption>Architecture réseau du projet Pépinière d'entreprise</figcaption>
+                            <img src="assets/images/adm/administrer_proxmox.jpg" alt="Administration Proxmox pour haute disponibilité et QoS" class="skill-img" loading="lazy" data-lightbox-caption="Administration Proxmox VE - Gestion VM haute disponibilité"/>
+                            <figcaption>Administration Proxmox pour haute disponibilité et QoS</figcaption>
+                            <img src="assets/images/adm/administrer_ad.jpg" alt="Configuration Active Directory pour VLAN Admin" class="skill-img" loading="lazy" data-lightbox-caption="Configuration AD DS pour VLAN Administration"/>
+                            <figcaption>Configuration Active Directory pour VLAN Admin</figcaption>
                         </figure>
                         
                         <h4>Architecture conçue</h4>
@@ -474,6 +465,10 @@ ip dhcp pool vlan10
                             </div>
                         </div>
                         
+                        <figure>
+                            <img src="assets/images/connec/connecter_telephonie.jpg" alt="Déploiement Asterisk ToIP" class="skill-img" loading="lazy" data-lightbox-caption="Serveur Asterisk avec téléphones IP"/>
+                            <figcaption>Déploiement Asterisk ToIP</figcaption>
+                        </figure>
                         <h4>Traces techniques</h4>
                         <ul>
                             <li><strong>Asterisk 18</strong> : 10 comptes SIP, trunks inter-serveurs</li>
@@ -494,6 +489,12 @@ ip dhcp pool vlan10
                         <span class="ac-title">Déployer un réseau d'accès sans fil sécurisé</span>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
+                    <div class="ac-content">
+                        <figure>
+                            <img src="assets/images/connec/connecter_qos.png" alt="Configuration QoS Cisco pour WiFi prioritaire" class="skill-img" loading="lazy" data-lightbox-caption="Configuration QoS pour prioriser VoIP sur WiFi"/>
+                            <figcaption>Configuration QoS Cisco pour WiFi prioritaire</figcaption>
+                        </figure>
+
                     <div class="ac-content">
                         <p>J'ai configuré un réseau WiFi sécurisé sur point d'accès Cisco dans le cadre du projet Pépinière.</p>
                         
@@ -649,6 +650,10 @@ interface Vlan20
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
+                        <figure>
+                            <img src="assets/images/projets/SAE/connecter_infra.jpg" alt="Infrastructure SAE avec Arduino et caméra IP" class="skill-img" loading="lazy" data-lightbox-caption="Infrastructure complète projet SAE - Caméra + Arduino DHT22"/>
+                            <figcaption>Projet SAE - Caméra IP et Arduino DHT22 pour détection QR</figcaption>
+                        </figure>
                         <div class="but3-reflex">
                             <div class="reflex-item">
                                 <strong>Ce que j'ai fait :</strong> Détection QR realtime caméra IP + capteur DHT22 Arduino (Pépinière/SAE503)
@@ -670,6 +675,10 @@ interface Vlan20
                             </div>
                         </div>
                         
+                        <figure>
+                            <img src="assets/images/connec/connecter_camqrcode.jpg" alt="Détection QR Code avec caméra IP" class="skill-img" loading="lazy" data-lightbox-caption="Détection realtime QR codes avec OpenCV + pyzbar"/>
+                            <figcaption>Détection realtime QR codes avec OpenCV</figcaption>
+                        </figure>
                         <h4>Traces techniques</h4>
                         <pre><code class="language-python">import cv2
 from pyzbar.pyzbar import decode
@@ -678,7 +687,8 @@ class QRCodeScanner:
     def __init__(self, rtsp_url):
         self.rtsp_url = rtsp_url
         
-    def process_frame(self, frame):        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    def process_frame(self, frame):
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         qrcodes = decode(gray)
         for qrcode in qrcodes:
             data = qrcode.data.decode('utf-8')
@@ -893,6 +903,12 @@ services:
                     <summary>
                         <span class="ac-code">AC34.01</span>
                         <span class="ac-title">Participer activement à une analyse de risque pour définir une politique de sécurité</span>
+                    </summary>
+                    <div class="ac-content">
+                        <figure>
+                            <img src="assets/images/secu/securiser_ANSSI.jpg" alt="Analyse risque PSSI ANSSI" class="skill-img" loading="lazy" data-lightbox-caption="Référentiel PSSI ANSSI - Analyse risques projet Pépinière"/>
+                            <figcaption>Référentiel PSSI ANSSI pour analyse risques</figcaption>
+                        </figure>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
@@ -1091,6 +1107,10 @@ services:
                             </div>
                         </div>
                         
+                        <figure>
+                            <img src="assets/images/surve/surveiller_docker.jpg" alt="Monitoring Docker avec Portainer" class="skill-img" loading="lazy" data-lightbox-caption="Portainer - Supervision 12 conteneurs Docker realtime"/>
+                            <figcaption>Monitoring Docker avec Portainer</figcaption>
+                        </figure>
                         <h4>Traces techniques</h4>
                         <ul>
                             <li><strong>Python Monitor</strong> : Ping realtime 15 machines</li>
