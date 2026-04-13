@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { 
     // --- Cache DOM elements ---
     const body = document.body;
     const themeToggle = document.getElementById('theme-toggle');
