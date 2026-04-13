@@ -151,8 +151,9 @@ if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
     // --- Project Modal ---
     const projects = {
         pepiniere: {
-            title: 'Projet Pépinière d\\'Entreprise',
+            title: "Projet Pépinière d'Entreprise", // Changement des guillemets simples en guillemets doubles ici
             description: `Infrastructure réseau complète pour une pépinière d'entreprises (SAE21/24).
+// ... le reste de votre code
 
 **Équipements:**
 - Routeur Cisco C927-4P (NAT, ACL, DHCP, QoS, VLAN)
