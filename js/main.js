@@ -130,11 +130,12 @@ if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
 
         const typeSpeed = isDeleting ? 50 : 100;
         setTimeout(() => {
-if (!isDeleting && charIndex === phrases[phraseIndex].length) {
+            if (!isDeleting && charIndex === phrases[phraseIndex].length) {
                 isDeleting = true;
                 cursorElement.classList.add('blink-pause');
                 setTimeout(typePhrase, 1500);
-else if (isDeleting && charIndex === 0) {
+            } // <-- AJOUTEZ CETTE ACCCOLADE FERMANTE ICI
+            else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 phraseIndex = (phraseIndex + 1) % phrases.length;
                 cursorElement.classList.remove('blink-pause');
