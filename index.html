@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roman Negrila - Portfolio BUT R&T Cybersécurité</title>
-    
-    <!-- Meta Tags for SEO and Social Sharing -->
-    <meta name="description" content="Portfolio de Roman Negrila, étudiant en BUT Réseaux & Télécommunications parcours Cybersécurité. Découvrez mes projets, compétences et certifications.">
-    <meta name="keywords" content="Roman Negrila, Portfolio, BUT R&T, Cybersécurité, Réseaux, Alternance, IUT Béthune, Projets, Compétences">
-    <meta name="author" content="Roman Negrila">
-    
 
+    <meta name="description" content="Portfolio de Roman Negrila, étudiant en BUT Réseaux & Télécommunications parcours Cybersécurité. Découvrez mes projets, compétences et certifications.">
+    <meta name="keywords" content="Roman Negrila, Portfolio, BUT R&T, Cybersécurité, Réseaux, Alternance, IUT Béthune">
+    <meta name="author" content="Roman Negrila">
+    <meta name="theme-color" content="#0a0f2f">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-<link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0a0f2f">
-    <link rel="apple-touch-icon" href="assets/images/image1.png">
 </head>
 <body data-theme="dark">
+
+    <!-- Barre de progression -->
     <div id="progress-bar"></div>
-    
-    <!-- Lightbox pour les images -->
+
+    <!-- Lightbox -->
     <div id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-caption-title">
         <button id="lightbox-close" aria-label="Fermer l'image agrandie">&times;</button>
         <img id="lightbox-img" src="" alt="Image agrandie">
         <div id="lightbox-caption" role="heading" aria-level="2"></div>
     </div>
-    
+
+    <!-- En-tête mobile -->
+    <header class="mobile-header">
+        <a href="#accueil" class="logo-link" aria-label="Accueil">
+            <span class="logo" style="font-family: var(--font-mono); font-size: 1.1rem; font-weight: 700;">
+                <span class="logo-bracket">&lt;</span>Roman<span class="logo-slash">/</span><span class="logo-bracket">></span>
+            </span>
+        </a>
+        <button id="mobile-sidebar-toggle" aria-label="Ouvrir le menu" style="background:none;border:none;color:var(--fg-color);font-size:1.5rem;cursor:pointer;">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Sidebar -->
     <aside class="sidebar">
         <div class="sidebar-header">
             <a href="#accueil" class="logo-link" aria-label="Retour à l'accueil">
@@ -38,63 +48,64 @@
                     <span class="logo-bracket">&lt;</span>Roman<span class="logo-slash">/</span>Negrila<span class="logo-bracket">></span>
                 </h1>
             </a>
-            <button id="sidebar-toggle" aria-label="Ouvrir/Fermer le menu latéral">
+            <button id="sidebar-toggle" aria-label="Fermer le menu latéral">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        
-        <nav class="sidebar-nav">
+
+        <nav class="sidebar-nav" aria-label="Navigation principale">
             <a href="#accueil" class="sidebar-link active">
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home" aria-hidden="true"></i>
                 <span>Accueil</span>
             </a>
             <a href="#a-propos" class="sidebar-link">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user" aria-hidden="true"></i>
                 <span>À Propos</span>
             </a>
             <a href="#formation" class="sidebar-link">
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                 <span>Formation</span>
             </a>
-            
+
             <div class="sidebar-section-title">COMPÉTENCES</div>
-            
+
             <a href="#administrer" class="sidebar-link competence-link">
-                <i class="fas fa-server"></i>
+                <i class="fas fa-server" aria-hidden="true"></i>
                 <span>Administrer</span>
             </a>
             <a href="#connecter" class="sidebar-link competence-link">
-                <i class="fas fa-network-wired"></i>
+                <i class="fas fa-network-wired" aria-hidden="true"></i>
                 <span>Connecter</span>
             </a>
             <a href="#programmer" class="sidebar-link competence-link">
-                <i class="fas fa-code"></i>
+                <i class="fas fa-code" aria-hidden="true"></i>
                 <span>Programmer</span>
             </a>
             <a href="#securiser" class="sidebar-link competence-link">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <span>Sécuriser</span>
             </a>
             <a href="#surveiller" class="sidebar-link competence-link">
-                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye" aria-hidden="true"></i>
                 <span>Surveiller</span>
             </a>
-            
+
             <div class="sidebar-section-title">AUTRES</div>
-            
+
             <a href="#projets" class="sidebar-link">
-                <i class="fas fa-project-diagram"></i>
+                <i class="fas fa-project-diagram" aria-hidden="true"></i>
                 <span>Projets</span>
             </a>
             <a href="#certifications" class="sidebar-link">
-                <i class="fas fa-certificate"></i>
+                <i class="fas fa-certificate" aria-hidden="true"></i>
                 <span>Certifications</span>
             </a>
             <a href="#contact" class="sidebar-link">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
                 <span>Contact</span>
-            </a>        </nav>
-        
+            </a>
+        </nav>
+
         <div class="sidebar-footer">
             <button id="theme-toggle" aria-label="Changer le thème">
                 <i class="fas fa-moon"></i>
@@ -102,8 +113,10 @@
         </div>
     </aside>
 
+    <!-- Contenu principal -->
     <main class="main-content">
-        <!-- Project Modal -->
+
+        <!-- Modal Projet -->
         <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
             <div class="project-modal-content">
                 <button class="modal-close" aria-label="Fermer la fenêtre du projet">&times;</button>
@@ -115,14 +128,14 @@
             </div>
         </div>
 
-        <!-- 01. ACCUEIL -->
+        <!-- ===================== 01. ACCUEIL ===================== -->
         <section id="accueil" class="hero-section">
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="pulse" aria-hidden="true"></span>
                     En recherche d'alternance
                 </div>
-                <h2>Étudiant en <span class="highlight">BUT Réseaux & Télécommunications</span></h2>
+                <h2>Étudiant en <span class="highlight">BUT Réseaux &amp; Télécommunications</span></h2>
                 <h3>Parcours <span class="accent-text">Cybersécurité</span></h3>
                 <p class="typing-container">
                     <span class="typing" aria-live="polite" aria-atomic="true"></span><span class="cursor" aria-hidden="true">|</span>
@@ -149,7 +162,7 @@
     <span class="token keyword">def</span> <span class="token function">__init__</span>(self):
         self.nom = <span class="token string">"Roman Negrila"</span>
         self.age = <span class="token number">21</span>
-        self.formation = <span class="token string">"BUT R&T"</span>
+        self.formation = <span class="token string">"BUT R&amp;T"</span>
         self.specialite = <span class="token string">"Cybersécurité"</span>
         self.alternance = <span class="token string">"Auchan"</span>
         self.permis = <span class="token boolean">True</span>
@@ -158,14 +171,17 @@
 moi = <span class="token class">Etudiant</span>()</code></pre>
                 </div>
             </div>
-        </section>section id="a-propos">
+        </section>
+
+        <!-- ===================== 02. À PROPOS ===================== -->
+        <section id="a-propos">
             <div class="section-header">
                 <span class="section-tag">02.</span>
                 <h2>À Propos de Moi</h2>
             </div>
             <div class="about-content">
-                <p class="lead">J'ai <strong>21 ans</strong> et je suis actuellement en <strong>3ème année</strong> de BUT Réseaux & Télécommunications à l'<strong>IUT de Béthune</strong>, spécialisation <strong>Cybersécurité</strong>.</p>
-                <p>Je suis en <strong>alternance</strong> au sein de l'équipe <strong>exploitation réseau d'Auchan</strong> à Villeneuve d'Ascq, où je travaille sur la gestion et la supervision de l'infrastructure réseau du magasin.</p>
+                <p class="lead">J'ai <strong>21 ans</strong> et je suis actuellement en <strong>3ème année</strong> de BUT Réseaux &amp; Télécommunications à l'<strong>IUT de Béthune</strong>, spécialisation <strong>Cybersécurité</strong>.</p>
+                <p>Je suis en <strong>alternance</strong> au sein de l'équipe <strong>exploitation réseau d'Auchan</strong> à Villeneuve d'Ascq, où je travaille sur la gestion et la supervision de l'infrastructure réseau.</p>
                 <p>Ce qui me passionne dans la cybersécurité, c'est la course constante entre les attaquants et les défenseurs. Comprendre comment fonctionnent les vulnérabilités pour mieux sécuriser les systèmes, c'est un domaine qui me stimule au quotidien.</p>
                 <div class="about-info-cards">
                     <div class="info-card">
@@ -188,11 +204,12 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                             <strong>Anglais B2</strong>
                             <span>Classe Euro</span>
                         </div>
-                    </div>                </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- 03. FORMATION -->
+        <!-- ===================== 03. FORMATION ===================== -->
         <section id="formation">
             <div class="section-header">
                 <span class="section-tag">03.</span>
@@ -203,7 +220,8 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2022 - 2026</span>
-                        <h3>BUT Réseaux & Télécommunications</h3>                        <h4>Parcours Cybersécurité</h4>
+                        <h3>BUT Réseaux &amp; Télécommunications</h3>
+                        <h4>Parcours Cybersécurité</h4>
                         <p class="timeline-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> IUT de Béthune, Université d'Artois</p>
                         <ul class="timeline-details">
                             <li>Architecture et administration des réseaux</li>
@@ -225,16 +243,17 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                         </ul>
                     </div>
                 </div>
-            </div>        </section>
+            </div>
+        </section>
 
-        <!-- 04. ADMINISTRER (full from pages/administrer.html) -->
+        <!-- ===================== 04. ADMINISTRER ===================== -->
         <section id="administrer">
             <div class="section-header">
                 <span class="section-tag">04.</span>
                 <h2>Administrer</h2>
                 <p class="section-intro">Installer, configurer et administrer les systèmes, services et ressources numériques.</p>
             </div>
-            
+
             <div class="ac-container">
                 <details class="ac-card">
                     <summary>
@@ -243,15 +262,15 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
-                        <p>Lors du projet <strong>Pépinière d'Entreprise</strong> (SAE21/SAE24), j'ai conçu une infrastructure réseau complète pour une société de pépinière d'entreprises. Ce projet a nécessité la conception d'un réseau sécurisé avec plusieurs services (administration, production, IT) séparés par des VLANs. J'ai intégré les notions de haute disponibilité avec la redondance des équipements, configuré la QoS pour prioriser le trafic voix sur IP, et mis en place une architecture sécurisée avec pare-feu et filtrage.</p>
-                        
+                        <p>Lors du projet <strong>Pépinière d'Entreprise</strong> (SAE21/SAE24), j'ai conçu une infrastructure réseau complète. J'ai intégré les notions de haute disponibilité avec la redondance des équipements, configuré la QoS pour prioriser le trafic voix sur IP, et mis en place une architecture sécurisée avec pare-feu et filtrage.</p>
+
                         <figure>
                             <img src="assets/images/adm/administrer_proxmox.jpg" alt="Administration Proxmox pour haute disponibilité et QoS" class="skill-img" loading="lazy" data-lightbox-caption="Administration Proxmox VE - Gestion VM haute disponibilité"/>
                             <figcaption>Administration Proxmox pour haute disponibilité et QoS</figcaption>
                             <img src="assets/images/adm/administrer_ad.jpg" alt="Configuration Active Directory pour VLAN Admin" class="skill-img" loading="lazy" data-lightbox-caption="Configuration AD DS pour VLAN Administration"/>
                             <figcaption>Configuration Active Directory pour VLAN Admin</figcaption>
                         </figure>
-                        
+
                         <h4>Architecture conçue</h4>
                         <ul>
                             <li><strong>VLAN 10</strong> (Administration) : <code>192.168.10.0/24</code></li>
@@ -259,7 +278,7 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                             <li><strong>VLAN 30</strong> (IT) : <code>192.168.30.0/24</code></li>
                             <li><strong>VLAN 40</strong> (Guest) : <code>192.168.40.0/24</code></li>
                         </ul>
-                        
+
                         <h4>Services déployés</h4>
                         <ul>
                             <li><strong>Windows Server 2019</strong> : AD DS, DNS, DHCP</li>
@@ -267,7 +286,7 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                             <li><strong>Docker</strong> : Apache/Nginx, TFTP</li>
                             <li><strong>Caméra IP</strong> : Vivotek avec analyse vidéo</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Cisco</span>
                             <span class="skill-tag">VLAN</span>
@@ -284,7 +303,8 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
-                        <p>Dans le cadre du Projet Pépinière, j'ai rédigé une documentation technique complète permettant la reproductibilité de l'infrastructure.</p>                        
+                        <p>Dans le cadre du Projet Pépinière, j'ai rédigé une documentation technique complète permettant la reproductibilité de l'infrastructure.</p>
+
                         <h4>Documentation réalisée</h4>
                         <ul>
                             <li>Configuration routeur Cisco (NAT, ACL, DHCP, VLAN, QoS)</li>
@@ -294,7 +314,7 @@ moi = <span class="token class">Etudiant</span>()</code></pre>
                         </ul>
 
                         <h4>Exemple de configuration Routeur</h4>
-                        <pre><code class="language-cisco">! Configuration des VLANs
+                        <pre><code>! Configuration des VLANs
 interface Vlan10
  description Administration
  ip address 192.168.10.1 255.255.255.0
@@ -303,7 +323,7 @@ interface Vlan10
 ip dhcp pool vlan10
  network 192.168.10.0 255.255.255.0
  default-router 192.168.10.1</code></pre>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Documentation</span>
                             <span class="skill-tag">Procédures</span>
@@ -320,7 +340,7 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <p>J'ai réalisé une maquette fonctionnelle complète du projet Pépinière permettant de démontrer la faisabilité technique devant le jury.</p>
-                        
+
                         <h4>Composants de la maquette</h4>
                         <ul>
                             <li><strong>Routeur Cisco C927-4P</strong> : NAT, ACL, DHCP, QoS</li>
@@ -329,7 +349,7 @@ ip dhcp pool vlan10
                             <li><strong>Serveur Windows Server 2019</strong> : AD DS, DNS, DHCP</li>
                             <li><strong>Serveur Asterisk</strong> : ToIP avec 2 téléphones IP</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">VMware</span>
                             <span class="skill-tag">Cisco</span>
@@ -338,7 +358,7 @@ ip dhcp pool vlan10
                         </div>
                     </div>
                 </details>
-                
+
                 <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC31.04</span>
@@ -347,14 +367,14 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <p>Lors des soutenances de projets (Pépinière, SAE 501, SAE 503), j'ai présenté et défendu mes choix techniques devant un jury d'enseignants et de professionnels.</p>
-                        
+
                         <h4>Projets défendus</h4>
                         <ul>
                             <li><strong>Projet Pépinière</strong> : Architecture réseau complète (note: 16/20)</li>
                             <li><strong>SAE 501</strong> : Infrastructure conteneurisée Docker (note: 17/20)</li>
                             <li><strong>SAE 503</strong> : Services ROM/VoIP (note: 15/20)</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Présentation</span>
                             <span class="skill-tag">Argumentation</span>
@@ -371,7 +391,7 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <p>Au cours des projets collectifs, j'ai appris à communiquer efficacement avec les membres de l'équipe et les enseignants.</p>
-                        
+
                         <h4>Communication en équipe</h4>
                         <ul>
                             <li>Répartition des tâches via matrice RACI</li>
@@ -380,12 +400,6 @@ ip dhcp pool vlan10
                             <li>Appel téléphonique en anglais avec "client" simulé</li>
                         </ul>
 
-                        <h4>Langues</h4>
-                        <ul>
-                            <li>Communication en français</li>
-                            <li>Anglais B2</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Équipe</span>
                             <span class="skill-tag">Français</span>
@@ -402,7 +416,7 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <p>J'ai géré des projets complets sur plusieurs semaines en respectant les délais. Le projet Pépinière s'est déroulé sur 6 jours intensifs.</p>
-                        
+
                         <h4>Planification</h4>
                         <ul>
                             <li>Création du diagramme de Gantt sur 6 jours</li>
@@ -413,14 +427,13 @@ ip dhcp pool vlan10
 
                         <h4>Résultats</h4>
                         <ul>
-                            <li>Infrastructure complète livrée</li>
+                            <li>Infrastructure complète livrée dans les délais</li>
                             <li>Documentation complète (30 pages)</li>
                             <li>Soutenance réussie (note: 16/20)</li>
-                            <li>Délai respecté</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
-                            <span class="skill-tag">Gestion</span>
+                            <span class="skill-tag">Gestion de projet</span>
                             <span class="skill-tag">Délais</span>
                             <span class="skill-tag">Méthode Agile</span>
                         </div>
@@ -429,7 +442,7 @@ ip dhcp pool vlan10
             </div>
         </section>
 
-        <!-- 05. CONNECTER -->
+        <!-- ===================== 05. CONNECTER ===================== -->
         <section id="connecter">
             <div class="section-header">
                 <span class="section-tag">05.</span>
@@ -437,7 +450,7 @@ ip dhcp pool vlan10
                 <p class="section-intro">Concevoir, installer et administrer une infrastructure réseau sécurisée.</p>
             </div>
             <div class="ac-container">
-                <details class="ac-card but3">
+                <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC32.01</span>
                         <span class="ac-title">Déployer un système de communication d'entreprise</span>
@@ -445,36 +458,25 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <div class="but3-reflex">
-                            <div class="reflex-item">
-                                <strong>Ce que j'ai fait :</strong> Déployé Asterisk + caméra IP Vivotek pour SAE503/Pépinière (10 extensions SIP, flux RTSP)
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pourquoi :</strong> Système communication complète (VoIP + vidéo) pour PME, exigences SAE
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Comment :</strong> Alpine Linux, Docker, OpenCV Python, SQLite (suivi QR codes caméra)
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Difficultés :</strong> Latence RTSP haute → résolu QoS Asterisk + buffering OpenCV
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Apprentissages :</strong> SIP fragile sans ACL, monitoring CDR essentiel prod
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pro :</strong> FreePBX entreprise + Kamailio pour scale + WebRTC
-                            </div>
+                            <div class="reflex-item"><strong>Ce que j'ai fait :</strong> Déployé Asterisk + caméra IP Vivotek pour SAE503/Pépinière (10 extensions SIP, flux RTSP)</div>
+                            <div class="reflex-item"><strong>Pourquoi :</strong> Système de communication complète (VoIP + vidéo) pour PME</div>
+                            <div class="reflex-item"><strong>Comment :</strong> Alpine Linux, Docker, OpenCV Python, SQLite (suivi QR codes caméra)</div>
+                            <div class="reflex-item"><strong>Difficultés :</strong> Latence RTSP haute → résolu QoS Asterisk + buffering OpenCV</div>
+                            <div class="reflex-item"><strong>Apprentissages :</strong> SIP fragile sans ACL, monitoring CDR essentiel en prod</div>
+                            <div class="reflex-item"><strong>Pro :</strong> FreePBX entreprise + Kamailio pour scale + WebRTC</div>
                         </div>
-                        
+
                         <figure>
                             <img src="assets/images/connec/connecter_telephonie.jpg" alt="Déploiement Asterisk ToIP" class="skill-img" loading="lazy" data-lightbox-caption="Serveur Asterisk avec téléphones IP"/>
                             <figcaption>Déploiement Asterisk ToIP</figcaption>
                         </figure>
+
                         <h4>Traces techniques</h4>
                         <ul>
                             <li><strong>Asterisk 18</strong> : 10 comptes SIP, trunks inter-serveurs</li>
                             <li><strong>Vivotek RTSP</strong> : Détection QR OpenCV</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Asterisk</span>
                             <span class="skill-tag">VoIP</span>
@@ -483,6 +485,7 @@ ip dhcp pool vlan10
                         </div>
                     </div>
                 </details>
+
                 <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC32.02</span>
@@ -495,28 +498,22 @@ ip dhcp pool vlan10
                             <figcaption>Configuration QoS Cisco pour WiFi prioritaire</figcaption>
                         </figure>
 
-                    <div class="ac-content">
                         <p>J'ai configuré un réseau WiFi sécurisé sur point d'accès Cisco dans le cadre du projet Pépinière.</p>
-                        
+
                         <h4>Configuration borne WiFi Cisco</h4>
                         <ul>
                             <li>Création du SSID "WLAN_Pepiniere"</li>
-                            <li>Configuration WPA2-Enterprise avec authentification RADIUS</li>                            <li>Sécurisation en 2.4GHz et 5GHz (802.11n/ac)</li>
+                            <li>Configuration WPA2-Enterprise avec authentification RADIUS</li>
+                            <li>Sécurisation en 2.4GHz et 5GHz (802.11n/ac)</li>
                             <li>Configuration du chiffrement AES-256</li>
                             <li>Isolation des clients</li>
                         </ul>
 
-                        <h4>Sécurité WiFi</h4>
-                        <ul>
-                            <li>WPA2 Enterprise avec serveur RADIUS</li>
-                            <li>Chiffrement AES 256 bits</li>
-                            <li>Authentification par certificats</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">WiFi</span>
                             <span class="skill-tag">WPA2</span>
                             <span class="skill-tag">802.11n/ac</span>
+                            <span class="skill-tag">RADIUS</span>
                         </div>
                     </div>
                 </details>
@@ -529,36 +526,28 @@ ip dhcp pool vlan10
                     </summary>
                     <div class="ac-content">
                         <p>J'ai déployé une infrastructure réseau complète avec routeur et switch Cisco pour le projet Pépinière.</p>
-                        
+
                         <h4>Équipements configurés</h4>
                         <ul>
                             <li><strong>Routeur Cisco C927-4P</strong> : Routage inter-VLAN, NAT, ACL, DHCP</li>
                             <li><strong>Switch Cisco Catalyst 2960</strong> : 24 ports en mode access/trunk</li>
                         </ul>
 
-                        <h4>Architecture réseau</h4>
-                        <ul>
-                            <li>3 VLANs principaux (10, 20, 30)</li>
-                            <li>Routage inter-VLAN sur le routeur Cisco</li>
-                            <li>NAT pour accès Internet</li>
-                            <li>ACL pour filtrage inter-VLAN</li>
-                        </ul>
-
                         <h4>Configuration routeur</h4>
-                        <pre><code class="language-cisco">! Interfaces VLAN
+                        <pre><code>! Interfaces VLAN
 interface Vlan10
  description Administration
  ip address 192.168.10.1 255.255.255.0
  ip nat inside
 !
 interface Vlan20
- description Production  
+ description Production
  ip address 192.168.20.1 255.255.255.0</code></pre>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Cisco IOS</span>
                             <span class="skill-tag">VLAN</span>
-                            <span class="skill-tag">routage</span>
+                            <span class="skill-tag">Routage</span>
                             <span class="skill-tag">ACL</span>
                         </div>
                     </div>
@@ -572,24 +561,15 @@ interface Vlan20
                     </summary>
                     <div class="ac-content">
                         <p>J'ai sécurisé l'accès au système d'information avec plusieurs couches de protection.</p>
-                        
+
                         <h4>Sécurité réseau</h4>
                         <ul>
                             <li>ACL sur routeur Cisco pour filtrer le trafic</li>
                             <li>NAT pour masquage d'adresses</li>
                             <li>Séparation des VLANs pour isoler les services</li>
                             <li>SSH v2 pour administration distante</li>
-                            <li>Journalisation des connexions (logging)</li>
                         </ul>
 
-                        <h4>Services sécurisés</h4>
-                        <ul>
-                            <li>Serveur Web avec HTTPS</li>
-                            <li>Authentification sur Windows Server (AD DS)</li>
-                            <li>Accès SSH avec clés RSA 4096 bits</li>
-                            <li>Fail2Ban sur Linux</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Firewall</span>
                             <span class="skill-tag">ACL</span>
@@ -607,26 +587,18 @@ interface Vlan20
                     </summary>
                     <div class="ac-content">
                         <p>J'ai travaillé en équipe de 5 personnes sur le projet Pépinière, avec une répartition claire des tâches.</p>
-                        
+
                         <h4>Équipe projet</h4>
                         <ul>
-                            <li><strong>Mathis Faucher</strong> - Responsable configuration Cisco</li>
-                            <li><strong>Roman Negrila</strong> - Responsable services Windows/Linux</li>
-                            <li><strong>Yohann Piek</strong> - Responsable documentation</li>
-                            <li><strong>Enzo Savary</strong> - Responsable IoT/Arduino</li>
-                            <li><strong>Lucas Verwaerde</strong> - Responsable QA/Tests</li>
+                            <li><strong>Mathis Faucher</strong> – Responsable configuration Cisco</li>
+                            <li><strong>Roman Negrila</strong> – Responsable services Windows/Linux</li>
+                            <li><strong>Yohann Piek</strong> – Responsable documentation</li>
+                            <li><strong>Enzo Savary</strong> – Responsable IoT/Arduino</li>
+                            <li><strong>Lucas Verwaerde</strong> – Responsable QA/Tests</li>
                         </ul>
 
-                        <h4>Communication</h4>
-                        <ul>
-                            <li>Réunions quotidiennes en français</li>
-                            <li>Appel téléphonique en anglais avec "client" simulé</li>
-                            <li>Communication asynchrone via Slack</li>
-                        </ul>
-                        
                         <div class="ac-skills">
-                            <span class="skill-tag">Équipe</span>
-                            <span class="skill-tag">Français</span>
+                            <span class="skill-tag">Travail d'équipe</span>
                             <span class="skill-tag">Anglais B2</span>
                             <span class="skill-tag">Méthode Agile</span>
                         </div>
@@ -635,7 +607,7 @@ interface Vlan20
             </div>
         </section>
 
-        <!-- 06. PROGRAMMER -->
+        <!-- ===================== 06. PROGRAMMER ===================== -->
         <section id="programmer">
             <div class="section-header">
                 <span class="section-tag">06.</span>
@@ -643,50 +615,30 @@ interface Vlan20
                 <p class="section-intro">Développer des applications, scripts et automatisations.</p>
             </div>
             <div class="ac-container">
-                <details class="ac-card but3">
+                <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC33.01</span>
                         <span class="ac-title">Implémenter des algorithmes</span>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
-                        <figure>
-                            <img src="assets/images/projets/SAE/connecter_infra.jpg" alt="Infrastructure SAE avec Arduino et caméra IP" class="skill-img" loading="lazy" data-lightbox-caption="Infrastructure complète projet SAE - Caméra + Arduino DHT22"/>
-                            <figcaption>Projet SAE - Caméra IP et Arduino DHT22 pour détection QR</figcaption>
-                        </figure>
                         <div class="but3-reflex">
-                            <div class="reflex-item">
-                                <strong>Ce que j'ai fait :</strong> Détection QR realtime caméra IP + capteur DHT22 Arduino (Pépinière/SAE503)
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pourquoi :</strong> Automatisation accès sécurisé + monitoring IoT industriel
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Comment :</strong> OpenCV + pyzbar (QR), Arduino JSON API, SQLite persistence
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Difficultés :</strong> Latence OpenCV → threading + queue; DHT22 I2C instable → librairie Adafruit
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Apprentissages :</strong> Threading critique realtime, JSON parsing robuste prod
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pro :</strong> TensorFlow Lite edge AI + MQTT broker pour scale
-                            </div>
+                            <div class="reflex-item"><strong>Ce que j'ai fait :</strong> Détection QR realtime caméra IP + capteur DHT22 Arduino</div>
+                            <div class="reflex-item"><strong>Pourquoi :</strong> Automatisation accès sécurisé + monitoring IoT industriel</div>
+                            <div class="reflex-item"><strong>Comment :</strong> OpenCV + pyzbar (QR), Arduino JSON API, SQLite persistence</div>
+                            <div class="reflex-item"><strong>Difficultés :</strong> Latence OpenCV → threading + queue ; DHT22 I2C instable → lib Adafruit</div>
+                            <div class="reflex-item"><strong>Apprentissages :</strong> Threading critique realtime, JSON parsing robuste en prod</div>
+                            <div class="reflex-item"><strong>Pro :</strong> TensorFlow Lite edge AI + MQTT broker pour scale</div>
                         </div>
-                        
-                        <figure>
-                            <img src="assets/images/connec/connecter_camqrcode.jpg" alt="Détection QR Code avec caméra IP" class="skill-img" loading="lazy" data-lightbox-caption="Détection realtime QR codes avec OpenCV + pyzbar"/>
-                            <figcaption>Détection realtime QR codes avec OpenCV</figcaption>
-                        </figure>
-                        <h4>Traces techniques</h4>
-                        <pre><code class="language-python">import cv2
+
+                        <h4>Code détection QR</h4>
+                        <pre><code>import cv2
 from pyzbar.pyzbar import decode
 
 class QRCodeScanner:
     def __init__(self, rtsp_url):
         self.rtsp_url = rtsp_url
-        
+
     def process_frame(self, frame):
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         qrcodes = decode(gray)
@@ -694,7 +646,7 @@ class QRCodeScanner:
             data = qrcode.data.decode('utf-8')
             self.save_qrcode(data)
         return frame</code></pre>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">OpenCV</span>
@@ -712,7 +664,7 @@ class QRCodeScanner:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai développé des applications web complètes avec Flask et des interfaces de gestion.</p>
-                        
+
                         <h4>Application Flask (SAE 501)</h4>
                         <ul>
                             <li>API REST avec Flask (Python 3.10)</li>
@@ -722,17 +674,9 @@ class QRCodeScanner:
                             <li>Base de données MySQL 8.0</li>
                         </ul>
 
-                        <h4>Site Web (Projet Pépinière)</h4>
-                        <ul>
-                            <li>Pages dynamiques en français et anglais</li>
-                            <li>Base de données produits (SQLite)</li>
-                            <li>Formulaire de contact avec validation</li>
-                            <li>Design responsive</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">HTML/CSS</span>
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">Responsive</span>
                         </div>
@@ -746,29 +690,16 @@ class QRCodeScanner:
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
-                        <p>J'ai automatisé plusieurs tâches système avec des scripts.</p>
-                        
+                        <p>J'ai automatisé plusieurs tâches système avec des scripts Python et Bash.</p>
+
                         <h4>Automatisations réalisées</h4>
                         <ul>
                             <li>Script de monitoring machines (Python/Flask)</li>
                             <li>Déploiement automatique VMs (script shell)</li>
                             <li>Backup automatique configuration (cron)</li>
-                            <li>Monitoring Raspberry Pi (Python)</li>
-                            <li>Rotation des logs (logrotate)</li>
                             <li>Déploiement conteneurs (Docker Compose)</li>
                         </ul>
 
-                        <h4>Script Monitoring Ping</h4>
-                        <pre><code class="language-python">from ping3 import ping
-from flask import Flask "192.168.10.9"
-}
-
-def check_machine(name, ip):
-    result = ping(ip, timeout=2)
-    if result:
-        return (name, ip, "OK", round(result * 1000, 1))
-    return (name, ip, "ERREUR", "-")</code></pre>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Bash</span>
                             <span class="skill-tag">Python</span>
@@ -777,7 +708,7 @@ def check_machine(name, ip):
                         </div>
                     </div>
                 </details>
-                
+
                 <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC33.04</span>
@@ -786,24 +717,9 @@ def check_machine(name, ip):
                     </summary>
                     <div class="ac-content">
                         <p>J'ai configuré des environnements de développement collaboratifs avec Docker et Git.</p>
-                        
-                        <h4>Docker (SAE 501)</h4>
-                        <ul>
-                            <li>Docker Compose multi-conteneurs</li>
-                            <li>Images personnalisées (Flask, MySQL, phpMyAdmin)</li>
-                            <li>Volumes pour la persistence</li>
-                            <li>Réseau Docker isolé</li>
-                        </ul>
-
-                        <h4>Gestion de version (Git)</h4>
-                        <ul>
-                            <li>Git pour le suivi des modifications</li>
-                            <li>Dépôts partagés (GitHub)</li>
-                            <li>Branches: main, develop, feature/*</li>
-                            <li>Merge requests pour les code reviews</li>                        </ul>
 
                         <h4>docker-compose.yml</h4>
-                        <pre><code class="language-yaml">version: '3.8'
+                        <pre><code>version: '3.8'
 services:
   web:
     build: ./app
@@ -811,7 +727,7 @@ services:
       - "5000:5000"
   db:
     image: mysql:8.0</code></pre>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Docker</span>
                             <span class="skill-tag">Git</span>
@@ -828,24 +744,15 @@ services:
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
-                        <p>J'ai créé des documentations et des interfaces utilisateur pour faciliter la prise en main des systèmes.</p>
-                        
+                        <p>J'ai créé des documentations et formé les utilisateurs à la prise en main des systèmes.</p>
+
                         <h4>Documentation créée</h4>
                         <ul>
                             <li>Procédures de connexion Windows Server</li>
                             <li>Guide d'utilisation Linux Ubuntu</li>
                             <li>Manuels Asterisk pour utilisateurs</li>
-                            <li>FAQ techniques</li>
                         </ul>
 
-                        <h4>Formation réalisée</h4>
-                        <ul>
-                            <li>Présentation du projet au jury (30 min)</li>
-                            <li>Démonstration des fonctionnalités</li>
-                            <li>Réponses aux questions des utilisateurs</li>
-                            <li>Session de formation live</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Formation</span>
                             <span class="skill-tag">Documentation</span>
@@ -862,25 +769,16 @@ services:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai implémenté plusieurs mesures de sécurité dans les applications développées.</p>
-                        
+
                         <h4>Sécurité applicative</h4>
                         <ul>
                             <li>Hachage des mots de passe avec bcrypt</li>
-                            <li>Protection contre injections SQL</li>
-                            <li>Gestion sécurisée des sessions</li>
-                            <li>Validation des entrées utilisateur</li>
+                            <li>Protection contre les injections SQL</li>
                             <li>CSRF tokens sur tous les formulaires</li>
+                            <li>Headers de sécurité (HSTS, CSP)</li>
                             <li>Rate limiting</li>
                         </ul>
 
-                        <h4>Autres mesures</h4>
-                        <ul>
-                            <li>Isolation des conteneurs Docker</li>
-                            <li>Configuration HTTPS</li>
-                            <li>Headers de sécurité (HSTS, CSP)</li>
-                            <li>Logs d'audit pour traçabilité</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Bcrypt</span>
                             <span class="skill-tag">OWASP</span>
@@ -891,7 +789,7 @@ services:
             </div>
         </section>
 
-        <!-- 07. SÉCURISER -->
+        <!-- ===================== 07. SÉCURISER ===================== -->
         <section id="securiser">
             <div class="section-header">
                 <span class="section-tag">07.</span>
@@ -899,51 +797,32 @@ services:
                 <p class="section-intro">Analyser les risques, auditer les vulnérabilités et mettre en œuvre des solutions de sécurité.</p>
             </div>
             <div class="ac-container">
-                <details class="ac-card but3">
+                <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC34.01</span>
                         <span class="ac-title">Participer activement à une analyse de risque pour définir une politique de sécurité</span>
+                        <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
                         <figure>
                             <img src="assets/images/secu/securiser_ANSSI.jpg" alt="Analyse risque PSSI ANSSI" class="skill-img" loading="lazy" data-lightbox-caption="Référentiel PSSI ANSSI - Analyse risques projet Pépinière"/>
                             <figcaption>Référentiel PSSI ANSSI pour analyse risques</figcaption>
                         </figure>
-                        <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
-                    </summary>
-                    <div class="ac-content">
+
                         <div class="but3-reflex">
-                            <div class="reflex-item">
-                                <strong>Ce que j'ai fait :</strong> Analyse risque Pépinière (CVSS VLANs/ACLs) + politique sécurité VLAN segmentation
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pourquoi :</strong> Respect PSSI ANSSI, protection données sensibles PME
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Comment :</strong> Matrice risque Excel, CVSS v3.1, EBIOS méthode
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Difficultés :</strong> Quantification proba menances → utiliser NIST SP800-30
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Apprentissages :</strong> Segmentation = première défense, documentation PSSI = clé audit
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pro :</strong> SIEM (Splunk) + GRC (RSA Archer) entreprise
-                            </div>
+                            <div class="reflex-item"><strong>Ce que j'ai fait :</strong> Analyse risque Pépinière (CVSS VLANs/ACLs) + politique sécurité VLAN segmentation</div>
+                            <div class="reflex-item"><strong>Pourquoi :</strong> Respect PSSI ANSSI, protection données sensibles PME</div>
+                            <div class="reflex-item"><strong>Comment :</strong> Matrice risque Excel, CVSS v3.1, méthode EBIOS</div>
+                            <div class="reflex-item"><strong>Difficultés :</strong> Quantification probabilité menaces → utiliser NIST SP800-30</div>
+                            <div class="reflex-item"><strong>Apprentissages :</strong> Segmentation = première défense, doc PSSI = clé d'audit</div>
+                            <div class="reflex-item"><strong>Pro :</strong> SIEM (Splunk) + GRC (RSA Archer) en entreprise</div>
                         </div>
-                        
-                        <h4>Traces techniques</h4>
-                        <ul>
-                            <li><strong>CVSS Scoring</strong> : VLAN misconfig C:5.9/H:4.1/I:4.9</li>
-                            <li><strong>Politique VLAN</strong> : 4 VLANs segmentés ACLs</li>
-                        </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Audit</span>
                             <span class="skill-tag">ANSSI</span>
                             <span class="skill-tag">Risques</span>
-                            <span class="skill-tag">MEHARI</span>
+                            <span class="skill-tag">EBIOS</span>
                         </div>
                     </div>
                 </details>
@@ -956,28 +835,15 @@ services:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai configuré plusieurs outils de sécurité pour protéger l'infrastructure réseau.</p>
-                        
-                        <h4>Pare-feu et filtrage</h4>
+
+                        <h4>Sécurité réseau et WiFi</h4>
                         <ul>
                             <li>ACL sur routeur Cisco</li>
-                            <li>Filtrage des trafics inter-VLAN</li>
-                            <li>NAT pour masquage d'adresses</li>
-                            <li>Restriction des accès SSH</li>
-                        </ul>
-
-                        <h4>Sécurité WiFi</h4>
-                        <ul>
                             <li>WPA2 Enterprise avec RADIUS</li>
                             <li>Chiffrement AES 256 bits</li>
-                            <li>Isolation des clients</li>
+                            <li>Hachage bcrypt pour les mots de passe</li>
                         </ul>
 
-                        <h4>Sécurité des mots de passe</h4>
-                        <ul>
-                            <li>Hachage bcrypt</li>
-                            <li>Mots de passe forts</li>
-                            <li>Politique de rotation</li>
-                        </ul>                        
                         <div class="ac-skills">
                             <span class="skill-tag">Firewall</span>
                             <span class="skill-tag">ACL</span>
@@ -994,36 +860,24 @@ services:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai sécurisé les différents systèmes d'exploitation et services déployés.</p>
-                        
+
                         <h4>Windows Server</h4>
                         <ul>
-                            <li>Active Directory avec utilisateurs et groupes</li>
-                            <li>Politiques de groupe (GPO)</li>
-                            <li>Droits d'accès sur les partages réseau</li>
+                            <li>Active Directory avec GPO</li>
                             <li>Authentification Kerberos</li>
                             <li>Pare-feu Windows activé</li>
                         </ul>
 
-                        <h4>Linux (Asterisk, Docker)</h4>
+                        <h4>Linux</h4>
                         <ul>
                             <li>Configuration SSH sécurisée</li>
-                            <li>Utilisateurs avec droits limités (sudo)</li>
-                            <li>Mise à jour automatique des paquets</li>
                             <li>Fail2Ban pour protection brute-force</li>
+                            <li>Mise à jour automatique des paquets</li>
                         </ul>
 
-                        <h4>Sécurité VoIP (Asterisk)</h4>
-                        <ul>
-                            <li>Authentification SIP avec mots de passe forts</li>
-                            <li>Ports par défaut modifiés</li>
-                            <li>Monitoring des appels (CDR)</li>
-                            <li>Protection contre les attaques DDoS</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">AD DS</span>
                             <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">VoIP</span>
                             <span class="skill-tag">Hardening</span>
                         </div>
                     </div>
@@ -1037,41 +891,32 @@ services:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai proposé et mis en œuvre une architecture sécurisée pour le Projet Pépinière.</p>
-                        
+
                         <h4>Architecture sécurisée</h4>
                         <ul>
                             <li><strong>DMZ</strong> : Serveurs accessibles depuis l'extérieur</li>
                             <li><strong>LAN</strong> : Postes de travail internes</li>
                             <li><strong>WLAN</strong> : Réseau WiFi isolé</li>
-                            <li><strong>Management</strong> : Accès administration séparé</li>
-                        </ul>
-
-                        <h4>Segmentation</h4>
-                        <ul>
-                            <li>3 VLANs pour les services (10, 20, 30)</li>
-                            <li>Routage filtré entre VLANs par ACL</li>
-                            <li>Accès Internet uniquement par NAT</li>
                         </ul>
 
                         <h4>Conformité</h4>
                         <ul>
                             <li>Recommandations ANSSI suivies</li>
-                            <li>Principe du moindre privilège appliqué</li>
+                            <li>Principe du moindre privilège</li>
                             <li>Défense en profondeur</li>
-                            <li>Journalisation des événements</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Architecture</span>
                             <span class="skill-tag">DMZ</span>
-                            <span class="skill-tag">Conformité</span>                            <span class="skill-tag">ANSSI</span>
+                            <span class="skill-tag">ANSSI</span>
                         </div>
                     </div>
                 </details>
             </div>
         </section>
 
-        <!-- 08. SURVEILLER -->
+        <!-- ===================== 08. SURVEILLER ===================== -->
         <section id="surveiller">
             <div class="section-header">
                 <span class="section-tag">08.</span>
@@ -1079,7 +924,7 @@ services:
                 <p class="section-intro">Superviser, monitorer et maintenir la disponibilité des services.</p>
             </div>
             <div class="ac-container">
-                <details class="ac-card but3">
+                <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC35.01</span>
                         <span class="ac-title">Surveiller l'activité du système d'information</span>
@@ -1087,41 +932,24 @@ services:
                     </summary>
                     <div class="ac-content">
                         <div class="but3-reflex">
-                            <div class="reflex-item">
-                                <strong>Ce que j'ai fait :</strong> Monitoring Python Flask + Portainer Docker (Pépinière/SAE501)
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pourquoi :</strong> HA services critiques, alertes proactives
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Comment :</strong> Ping3 + SQLite dashboard, Portainer API
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Difficultés :</strong> Faux positifs ping → thresholds adaptatifs + SNMP
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Apprentissages :</strong> Grafana > Flask home, alertes SMS/Slack prod
-                            </div>
-                            <div class="reflex-item">
-                                <strong>Pro :</strong> Zabbix + Grafana + PagerDuty entreprise
-                            </div>
+                            <div class="reflex-item"><strong>Ce que j'ai fait :</strong> Monitoring Python Flask + Portainer Docker</div>
+                            <div class="reflex-item"><strong>Pourquoi :</strong> HA services critiques, alertes proactives</div>
+                            <div class="reflex-item"><strong>Comment :</strong> Ping3 + SQLite dashboard, Portainer API</div>
+                            <div class="reflex-item"><strong>Difficultés :</strong> Faux positifs ping → thresholds adaptatifs + SNMP</div>
+                            <div class="reflex-item"><strong>Apprentissages :</strong> Grafana > Flask maison, alertes SMS/Slack en prod</div>
+                            <div class="reflex-item"><strong>Pro :</strong> Zabbix + Grafana + PagerDuty en entreprise</div>
                         </div>
-                        
+
                         <figure>
                             <img src="assets/images/surve/surveiller_docker.jpg" alt="Monitoring Docker avec Portainer" class="skill-img" loading="lazy" data-lightbox-caption="Portainer - Supervision 12 conteneurs Docker realtime"/>
                             <figcaption>Monitoring Docker avec Portainer</figcaption>
                         </figure>
-                        <h4>Traces techniques</h4>
-                        <ul>
-                            <li><strong>Python Monitor</strong> : Ping realtime 15 machines</li>
-                            <li><strong>Portainer</strong> : 12 conteneurs trackés</li>
-                        </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Monitoring</span>
                             <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Serveurs</span>
                             <span class="skill-tag">Alertes</span>
+                            <span class="skill-tag">Portainer</span>
                         </div>
                     </div>
                 </details>
@@ -1129,33 +957,30 @@ services:
                 <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC35.02</span>
-                        <span class="ac-title">Appliquer une méthodologie de tests de pénétration (Audit &amp; Découverte)</span>
+                        <span class="ac-title">Appliquer une méthodologie de tests de pénétration</span>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
                         <p>J'ai réalisé des analyses de sécurité avec Wireshark et des tests de pénétration basiques.</p>
-                        
+
                         <h4>Analyse Wireshark</h4>
                         <ul>
                             <li>Capture de trames réseau (mode promiscuité)</li>
                             <li>Analyse protocoles SIP/RTP (VoIP)</li>
-                            <li>Détection de problèmes de sécurité</li>
                             <li>Filtres avancés (BPF)</li>
                         </ul>
 
-                        <h4>Découverte de vulnérabilités</h4>
+                        <h4>Tests réalisés</h4>
                         <ul>
                             <li>Interception de trames non chiffrées</li>
-                            <li>Analyse du trafic SIP</li>
                             <li>Test des ACL</li>
                             <li>Scan de ports (nmap)</li>
                         </ul>
-                        
+
                         <div class="ac-skills">
                             <span class="skill-tag">Wireshark</span>
-                            <span class="skill-tag">Audit</span>
                             <span class="skill-tag">Pentest</span>
-                            <span class="skill-tag">Scan</span>
+                            <span class="skill-tag">Nmap</span>
                         </div>
                     </div>
                 </details>
@@ -1163,12 +988,12 @@ services:
                 <details class="ac-card">
                     <summary>
                         <span class="ac-code">AC35.03</span>
-                        <span class="ac-title">Réagir face à un incident de sécurité (Gestion des Actifs)</span>
+                        <span class="ac-title">Réagir face à un incident de sécurité</span>
                         <i class="fas fa-chevron-down ac-toggle-icon" aria-hidden="true"></i>
                     </summary>
                     <div class="ac-content">
                         <p>J'ai été sensibilisé à la gestion des incidents de sécurité et à la gestion des actifs.</p>
-                        
+
                         <h4>Procédures étudiées</h4>
                         <ul>
                             <li>Identification de l'incident</li>
@@ -1178,27 +1003,9 @@ services:
                             <li>Analyse post-incident</li>
                         </ul>
 
-                        <h4>Gestion des actifs</h4>
-                        <ul>
-                            <li>Inventaire des équipements réseau</li>
-                            <li>Suivi des machines virtuelles</li>
-                            <li>Documentation des configurations</li>
-                            <li>Sauvegardes régulières</li>
-                            <li>Plan de reprise d'activité (PRA)</li>
-                        </ul>
-
-                        <h4>Actions réalisées</h4>
-                        <ul>
-                            <li>Tests de connectivité</li>
-                            <li>Vérification des logs</li>
-                            <li>Redémarrage des services</li>
-                            <li>Rapports d'incidents</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Incidents</span>
                             <span class="skill-tag">Procédures</span>
-                            <span class="skill-tag">Actifs</span>
                             <span class="skill-tag">PRA</span>
                         </div>
                     </div>
@@ -1212,34 +1019,17 @@ services:
                     </summary>
                     <div class="ac-content">
                         <p>J'ai administré plusieurs outils de surveillance au cours de mes projets.</p>
-                        
+
                         <h4>Outils utilisés</h4>
                         <ul>
                             <li><strong>Portainer</strong> : Gestion et supervision Docker</li>
                             <li><strong>Wireshark</strong> : Analyse réseau</li>
-                            <li><strong>Script Python</strong> : Monitoring personnalisé</li>
+                            <li><strong>Script Python</strong> : Monitoring personnalisé (ping realtime 15 machines)</li>
                         </ul>
 
-                        <h4>Administration Docker (SAE 501)</h4>
-                        <ul>
-                            <li>Gestion des conteneurs via Portainer</li>
-                            <li>Création d'images personnalisées</li>
-                            <li>Configuration des réseaux Docker</li>
-                            <li>Monitoring des ressources</li>
-                        </ul>
-
-                        <h4>Configuration réalisée</h4>
-                        <ul>
-                            <li>Déploiement multi-conteneurs (docker-compose)</li>
-                            <li>Monitoring des ressources</li>
-                            <li>Gestion des logs</li>
-                            <li>Sauvegarde des configurations</li>
-                        </ul>
-                        
                         <div class="ac-skills">
                             <span class="skill-tag">Portainer</span>
                             <span class="skill-tag">Administration</span>
-                            <span class="skill-tag">Configuration</span>
                             <span class="skill-tag">Inventaire</span>
                         </div>
                     </div>
@@ -1247,7 +1037,7 @@ services:
             </div>
         </section>
 
-        <!-- 09. PROJETS -->
+        <!-- ===================== 09. PROJETS ===================== -->
         <section id="projets">
             <div class="section-header">
                 <span class="section-tag">09.</span>
@@ -1262,11 +1052,13 @@ services:
                         <div class="project-info">
                             <h3>Projet Pépinière d'Entreprise</h3>
                             <p>SAE21-SAE24 | Infrastructure réseau complète Cisco + Services IT</p>
-                        </div>                    </button>
+                        </div>
+                    </button>
                 </article>
 
                 <article class="project-card" data-project-id="sae501">
-                    <button class="project-card-button" aria-label="Voir les détails du projet SAÉ 501 - Infrastructure Conteneurisée">                        <div class="project-icon" style="background: linear-gradient(135deg, #2496ed, #0db7a5);">
+                    <button class="project-card-button" aria-label="Voir les détails du projet SAÉ 501">
+                        <div class="project-icon" style="background: linear-gradient(135deg, #2496ed, #0db7a5);">
                             <i class="fab fa-docker" aria-hidden="true"></i>
                         </div>
                         <div class="project-info">
@@ -1277,7 +1069,7 @@ services:
                 </article>
 
                 <article class="project-card" data-project-id="sae5rom03">
-                    <button class="project-card-button" aria-label="Voir les détails du projet SAÉ 5 ROM.03 - Services ROM">
+                    <button class="project-card-button" aria-label="Voir les détails du projet SAÉ 5 ROM.03">
                         <div class="project-icon" style="background: linear-gradient(135deg, #00ffd5, #00b894);">
                             <i class="fas fa-phone-alt" aria-hidden="true"></i>
                         </div>
@@ -1290,14 +1082,14 @@ services:
             </div>
         </section>
 
-        <!-- 10. CERTIFICATIONS -->
+        <!-- ===================== 10. CERTIFICATIONS ===================== -->
         <section id="certifications">
             <div class="section-header">
                 <span class="section-tag">10.</span>
                 <h2>Certifications</h2>
             </div>
             <div class="certs-categories">
-                <!-- Sécurité -->
+                <!-- Cybersécurité -->
                 <div class="certs-category">
                     <h3 class="category-title"><i class="fas fa-shield-alt" aria-hidden="true"></i> Cybersécurité</h3>
                     <div class="certs-grid">
@@ -1320,7 +1112,7 @@ services:
                                 <p>Formation approfondie sur les fondamentaux de la cybersécurité, la gestion des risques et la réponse aux incidents.</p>
                             </div>
                         </div>
-                        
+
                         <div class="cert-card">
                             <div class="cert-badge obtained">
                                 <i class="fas fa-graduation-cap" aria-hidden="true"></i>
@@ -1342,7 +1134,7 @@ services:
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Réseau -->
                 <div class="certs-category">
                     <h3 class="category-title"><i class="fas fa-network-wired" aria-hidden="true"></i> Réseau &amp; Télécom</h3>
@@ -1365,14 +1157,15 @@ services:
                             <div class="cert-hover">
                                 <p>Certification internationale validant les compétences en administration réseau Cisco.</p>
                                 <div class="cert-progress">
-                                    <span>Progression: 60%</span>
+                                    <span>Progression : 60%</span>
                                     <div class="progress-bar"><div class="progress-fill" style="width: 60%"></div></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <!-- Langues -->
+
+                <!-- Langues -->
                 <div class="certs-category">
                     <h3 class="category-title"><i class="fas fa-language" aria-hidden="true"></i> Langues</h3>
                     <div class="certs-grid">
@@ -1395,7 +1188,7 @@ services:
                                 <p>Certification Cambridge attestant d'un niveau B1 en anglais.</p>
                             </div>
                         </div>
-                        
+
                         <div class="cert-card">
                             <div class="cert-badge obtained">
                                 <i class="fas fa-star" aria-hidden="true"></i>
@@ -1407,18 +1200,17 @@ services:
                                 <div class="cert-skills">
                                     <span>B2 Advanced</span>
                                     <span>Business English</span>
-                                    <span>Communication pro</span>
                                 </div>
                                 <span class="cert-status obtained">Obtenu</span>
                             </div>
                             <div class="cert-hover">
-                                <p>Score obtenu: 785/990 - Niveau B2 attestant d'une compétence professionnelle en anglais.</p>
+                                <p>Score obtenu : 785/990 — Niveau B2 attestant d'une compétence professionnelle en anglais.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Compétences numériques -->
+
+                <!-- Numérique -->
                 <div class="certs-category">
                     <h3 class="category-title"><i class="fas fa-laptop-code" aria-hidden="true"></i> Compétences Numériques</h3>
                     <div class="certs-grid">
@@ -1429,11 +1221,11 @@ services:
                             <div class="cert-content">
                                 <h4>Pix</h4>
                                 <p class="cert-issuer">Éducation Nationale</p>
-                                <p class="cert-desc">Certification numérique</p>                                <div class="cert-skills">
+                                <p class="cert-desc">Certification numérique</p>
+                                <div class="cert-skills">
                                     <span>Information</span>
                                     <span>Communication</span>
                                     <span>Sécurité</span>
-                                    <span>Résolution problème</span>
                                 </div>
                                 <span class="cert-status obtained">Obtenue</span>
                             </div>
@@ -1446,7 +1238,7 @@ services:
             </div>
         </section>
 
-        <!-- 11. CONTACT -->
+        <!-- ===================== 11. CONTACT ===================== -->
         <section id="contact">
             <div class="section-header">
                 <span class="section-tag">11.</span>
@@ -1458,29 +1250,28 @@ services:
                         <i class="fas fa-user-graduate" aria-hidden="true"></i>
                     </div>
                     <h3>Roman Negrila</h3>
-                    <p class="contact-title">Étudiant BUT R&amp;T - Cybersécurité</p>
+                    <p class="contact-title">Étudiant BUT R&amp;T – Cybersécurité</p>
                     <p class="contact-availability">
                         <span class="availability-dot" aria-hidden="true"></span>
                         Disponible pour alternance
                     </p>
                 </div>
-                
+
                 <div class="contact-info-grid">
                     <a href="mailto:roman.negrila@etud.univ-artois.fr" class="contact-item">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
                         <span>roman.negrila@etud.univ-artois.fr</span>
                     </a>
-                    
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <span>Béthune, France</span>
                     </div>
-                    
                     <div class="contact-item">
                         <i class="fas fa-briefcase" aria-hidden="true"></i>
                         <span>Auchan Villeneuve d'Ascq</span>
                     </div>
-                </div>                
+                </div>
+
                 <div class="contact-cta">
                     <p>N'hésitez pas à me contacter pour une alternance ou un stage !</p>
                     <a href="mailto:roman.negrila@etud.univ-artois.fr" class="btn btn-primary btn-large">
@@ -1489,7 +1280,12 @@ services:
                 </div>
             </div>
         </section>
+
     </main>
+
+    <footer>
+        <p>© 2025 Roman Negrila — Portfolio BUT R&T Cybersécurité</p>
+    </footer>
 
     <script src="js/main.js" defer></script>
 </body>
